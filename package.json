@@ -1,24 +1,33 @@
 {
-  "name": "herramientasHTMLyCSS_PEC1",
+  "name": "herramientas_html-y-css_pec1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:dev": "parcel src/index.html --open",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .cache .cache-loader",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raiesbo/herramientasHTMLyCSS_PEC1.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "herramientas",
+    "html",
+    "css",
+    "pec1"
+  ],
+  "author": "Raimon Espasa Bou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raiesbo/herramientasHTMLyCSS_PEC1/issues"
   },
   "homepage": "https://github.com/raiesbo/herramientasHTMLyCSS_PEC1#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^9.8.6",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0",
     "postcss": "^8.3.11",
