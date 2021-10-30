@@ -1,7 +1,117 @@
-h1 {
-	color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+:root {
+	/* 5588cc lue berlin*/
+	--bg-color-main: #5589cc8a;
+	--dropped-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	--transition: all 250ms ease;
 }
 
-a {
-	font-size: 20px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+html {
+	font-size: 10px;
+}
+
+.mainHeader {
+}
+
+.navigation {
+	background-color: white;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	height: 6rem;
+	border-bottom: 1px solid black;
+	position: absolute;
+	transform: translateY(-6rem);
+	transition: var(--transition);
+}
+
+.navigationOn {
+	box-shadow: var(--dropped-shadow);
+	transform: translateY(0);
+}
+
+.navigationItem {
+	list-style: none;
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: black;
+}
+
+.navigationItem a {
+	text-decoration: none;
+	color: black;
+}
+
+.navigationItem a:hover {
+	text-decoration: underline;
+}
+
+.navActive {
+	color: var(--bg-color-main);
+}
+
+.burgerWrapper {
+	transition: var(--transition);
+}
+
+.burgerWrapperActive {
+	padding-top: 6rem;
+}
+
+.burger {
+	background-color: var(--bg-color-main);
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	height: 10rem;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.line {
+	background-color: black;
+	height: 5px;
+	width: 4.5rem;
+	border-radius: 2.5px;
+	transition: var(--transition);
+}
+
+.toggle .lineOne {
+	transform: rotate(-45deg) translateY(1.4rem);
+}
+.toggle .lineTwo {
+	opacity: 0;
+}
+.toggle .lineThree {
+	transform: rotate(45deg) translateY(-1.4rem);
+}
+
+.mainContent {
+	background-color: var(--bg-color-main);
+	height: calc(100vh - 16rem);
+	border-bottom: 1px solid black;
+	box-shadow: var(--dropped-shadow);
+	transition: var(--transition);
+}
+
+.mainContentActive {
+	height: calc(100vh - 22rem);
+}
+
+.mainFooter {
+	height: 6rem;
 }
