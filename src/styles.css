@@ -2,7 +2,7 @@
 
 :root {
 	/* 5588cc lue berlin*/
-	--bg-color-main: #20477a;
+	--bg-color-main: #4478bd;
 	--dropped-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 	--transition: all 250ms ease;
 }
@@ -72,7 +72,7 @@ h1 a {
 
 .burgerWrapper {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1100px;
 	margin: auto;
 	padding: 0 15px;
 	display: flex;
@@ -118,6 +118,8 @@ h1 a {
 	border-bottom: 1px solid black;
 	box-shadow: var(--dropped-shadow);
 	transition: var(--transition);
+	padding-top: 1rem;
+	padding-bottom: 5rem;
 }
 
 .mainContentActive {
@@ -153,22 +155,35 @@ h1 a {
 	}
 }
 section {
-	margin: auto;
-	padding: 15px;
-	max-width: 1200px;
+	/* background-color: white; */
+	margin: 2rem auto;
+	/* padding: 15px 0; */
+	/* max-width: 1000px; */
+	min-height: 100%;
+	/* box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5); */
 }
 
 h2 {
-	margin-top: 6rem;
-	color: white;
-	font-size: 2rem;
+	margin: auto;
+	/* color: white; */
+	color: #1a1a1a;
+	/* font-size: 2rem; */
+	font-size: 32px;
+	font-weight: 800;
 	margin-bottom: 3rem;
+	padding: 0 10px;
+	max-width: 1120px;
 }
 
 main p {
-	font-size: 1.7rem;
+	margin: auto;
+	/* font-size: 1.7rem; */
+	font-size: 32px;
 	margin-bottom: 1.5rem;
-	color: rgb(200, 200, 200);
+	padding: 0 10px;
+	max-width: 1120px;
+	color: #1a1a1a;
+	/* color: rgb(200, 200, 200); */
 }
 
 figure {
@@ -189,4 +204,15 @@ figcaption {
 	padding-top: 15px;
 	color: white;
 	text-align: center;
+	display: none;
+}
+
+@media only screen and (max-width: 780px) {
+	h2 {
+		font-size: 23px;
+	}
+
+	main p {
+		font-size: 23px;
+	}
 }
