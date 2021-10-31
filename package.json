@@ -4,7 +4,7 @@
   "description": "PEC1 de la asignatura Herramientas HTML y CSS I",
   "author": "Raimon Espasa Bou",
   "scripts": {
-    "cy:run": "cypress run -p 5000",
+    "cy:run": "cypress run",
     "test": "npm-run-all parcel:dev cy:run",
     "parcel:dev": "parcel src/index.html --open",
     "parcel:build": "parcel build src/index.html --no-source-maps",
