@@ -2,16 +2,22 @@
 
 :root {
 	/* 5588cc lue berlin*/
-	--bg-color-main: #4478bd;
+	/* ff0047 */
+	--bg-color-main: #ff0047;
+	--text-color-main: white;
+	--text-color-second: black;
+	--text-color-third: #1a1a1a;
 	--dropped-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 	--transition: all 250ms ease;
+	--font-main: Georgia, serif;
+	--font-nav: "Lato", sans-serif;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+	font-family: var(--font-main);
 }
 
 html {
@@ -29,6 +35,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
+	border-bottom: 1px solid black;
 	transition: var(--transition);
 	height: 0;
 	overflow: hidden;
@@ -36,11 +43,11 @@ html {
 
 .navigationOn {
 	height: 6rem;
-	border-bottom: 1px solid black;
 	box-shadow: var(--dropped-shadow);
 }
 
 .navigationItem {
+	font-family: var(--font-nav);
 	list-style: none;
 	font-size: 2.5rem;
 	font-weight: 900;
@@ -48,6 +55,7 @@ html {
 }
 
 .navigationItem a {
+	font-family: var(--font-nav);
 	text-decoration: none;
 	color: black;
 }
@@ -65,6 +73,7 @@ h1 {
 }
 
 h1 a {
+	font-family: var(--font-nav);
 	text-decoration: none;
 	color: white;
 	font-size: 3rem;
@@ -72,9 +81,9 @@ h1 a {
 
 .burgerWrapper {
 	width: 100%;
-	max-width: 1100px;
-	margin: auto;
+	max-width: 1170px;
 	padding: 0 15px;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -142,7 +151,16 @@ h1 a {
 
 .footerContainer h4 {
 	min-height: 100%;
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+}
+
+.footerContainer li {
+	text-decoration: none;
+
+	min-height: 100%;
 	font-size: 1.5rem;
+	margin-left: 3rem;
 }
 
 @media only screen and (max-width: 780px) {
@@ -157,22 +175,18 @@ h1 a {
 section {
 	/* background-color: white; */
 	margin: 2rem auto;
-	/* padding: 15px 0; */
-	/* max-width: 1000px; */
+	padding: 0 1.5rem 2rem;
+	max-width: 1170px;
 	min-height: 100%;
 	/* box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5); */
 }
 
 h2 {
 	margin: auto;
-	/* color: white; */
-	color: #1a1a1a;
-	/* font-size: 2rem; */
+	color: var(--text-color-main);
 	font-size: 32px;
 	font-weight: 800;
 	margin-bottom: 3rem;
-	padding: 0 10px;
-	max-width: 1120px;
 }
 
 main p {
@@ -180,15 +194,12 @@ main p {
 	/* font-size: 1.7rem; */
 	font-size: 32px;
 	margin-bottom: 1.5rem;
-	padding: 0 10px;
-	max-width: 1120px;
-	color: #1a1a1a;
+	color: var(--text-color-main);
 	/* color: rgb(200, 200, 200); */
 }
 
 figure {
 	max-width: 100%;
-	/* max-height: 300px; */
 	overflow: hidden;
 	margin: 15px 0;
 }
@@ -202,7 +213,7 @@ figure img {
 figcaption {
 	font-size: 1.2rem;
 	padding-top: 15px;
-	color: white;
+	color: var(--text-color-main);
 	text-align: center;
 	display: none;
 }
@@ -215,4 +226,41 @@ figcaption {
 	main p {
 		font-size: 23px;
 	}
+}
+
+.visitSpotsWrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 1rem;
+}
+
+.visitSpot {
+	background-color: white;
+	height: 24rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.visitSpot img {
+	width: 100%;
+}
+
+.visitSpotTitle {
+	max-width: max-content;
+	padding: 0.5rem 1rem;
+	font-size: 3rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	top: 1rem;
+	left: 1rem;
+	position: absolute;
+	transition: var(--transition);
+	opacity: 0;
+}
+
+.visitSpot:hover .visitSpotTitle {
+	opacity: 1;
 }
