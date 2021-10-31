@@ -37,8 +37,5 @@
     "parcel": "^2.0.0",
     "postcss": "^8.3.11",
     "rimraf": "^3.0.2"
-  },
-  "dependencies": {
-    "ttab": "^0.7.2"
   }
 }
