@@ -1,7 +1,6 @@
-
 beforeEach(() => {
     cy.visit('http://localhost:1234/')
-})
+});
 
 describe('home page', () => {
     it('loads the pages correctly', () => {
@@ -29,4 +28,4 @@ describe('navigation bar', () => {
         cy.contains('li', 'Categorias').should('be.visible');
       })
     })
-})
+});
