@@ -6,10 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "cy:run": "cypress run",
-    "kill": "parcel --port 1234 --watch-for-stdin",
-    "tro": "run-s cy:run kill",
+    "test": "run-p -r dev cy:run",
     "start": "parcel src/index.html --port 1234",
-    "test": "run-p start tro",
     "parcel:dev": "parcel src/index.html --open",
     "parcel:build": "parcel build src/index.html",
     "clean": "rimraf dist .cache .cache-loader",
