@@ -1,13 +1,6 @@
 # PEC1. Desarrollo de una web
 
-**Asignatura:** Herramientas HTML y CSS
+**Asignatura:** Herramientas HTML y CSS I
 **Alumno:** Raimon Espasa Bou
 
-## Descripción
 
-Proyecto basado en las directrices
-
-## Tecnologías:
-
-- Parcel
-- 

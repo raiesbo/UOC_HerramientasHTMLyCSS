@@ -4,7 +4,7 @@ beforeEach(() => {
 
 describe('home page', () => {
     it('loads the pages correctly', () => {
-      cy.visit('http://localhost:1234/')
+      cy.url('eq', 'http://localhost:1234/')
     })
   })
 
