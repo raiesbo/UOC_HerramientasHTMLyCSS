@@ -4,11 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="PEC1 Herraminetas HTML y CSS. Enlaces."
+		/>
+		<meta name="author" content="Raimon Espasa" />
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/styles.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
 		<title>Enlaces</title>
 	</head>
 	<body>
-		<h1>Enlaces</h1>
+		<header class="mainHeader">
+			<ul class="navigation">
+				<li class="navigationItem">
+					<a href="index.html">Portada</a>
+				</li>
+				<li class="navigationItem">
+					<a href="presentacion.html">Presentación</a>
+				</li>
+				<li class="navigationItem">
+					<a href="categorias.html">Categorias</a>
+				</li>
+				<li class="navigationItem navActive">Enlaces</li>
+			</ul>
+			<div class="burgerWrapper">
+				<h1>
+					<a href="index.html">VisitaBerlin</a>
+				</h1>
+				<div class="burger">
+					<div class="line lineOne"></div>
+					<div class="line lineTwo"></div>
+					<div class="line lineThree"></div>
+				</div>
+			</div>
+		</header>
+		<main class="mainContent">
+			<section>
+				<h2 class="categoriesTitle">Rutas guiadas disponibles:</h2>
+				<p>
+					En esta sección encontrarás nuestra selección de visitas
+					guiadas principales. Entre ellas puedes observar opciones
+					tanto dentro de la ciudad como en la naturaleza.
+				</p>
+			</section>
+		</main>
+		<script src="app.js"></script>
 	</body>
 </html>
