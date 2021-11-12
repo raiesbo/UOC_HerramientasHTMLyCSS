@@ -1,0 +1,10 @@
+.refItem {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+
+.refItem span {
+	font-size: 2rem;
+}
