@@ -47,8 +47,6 @@
 	font-size: 1.8rem;
 }
 
-.tripInfo li {
-}
 .tripInfo p {
 	margin: 0;
 	text-align: left;
@@ -62,6 +60,7 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	gap: 3rem;
 }
 
 .navDetails a {
@@ -81,4 +80,10 @@
 
 .navDetails a:hover {
 	box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 780px) {
+	.tripInfoImageWrapper {
+		height: min-content;
+	}
 }
