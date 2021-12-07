@@ -81,11 +81,20 @@
 					<div class="visitSpot visitSpot_second">
 						<div class="auxDiv">
 							<h3 class="visitSpotTitle">Catedral de Berlín</h3>
-							<img
-								src="./img/berlinerDom.jpg"
-								alt="Catedral de Berlín"
-								loading="lazy"
-							/>
+							<picture>
+								<source
+									type="image/avif"
+									srcset="
+										./img/berlinerDom_310.avif 375w,
+										./img/berlinerDom.avif
+									"
+								/>
+								<img
+									src="./img/berlinerDom.jpg"
+									alt="Catedral de Berlín"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 					</div>
 					<div class="visitSpot">
