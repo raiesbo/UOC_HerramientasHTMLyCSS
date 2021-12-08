@@ -50,11 +50,22 @@
 				</p>
 				<figure class="imgWrapper">
 					<div class="auxDiv">
-						<img
-							src="./img/us.jpg"
-							alt="team foto"
-							loading="lazy"
-						/>
+						<picture>
+							<!-- new real pictures are missing here -->
+							<source
+								media="(max-width: 799px)"
+								srcset="./img/us.jpg"
+							/>
+							<source
+								media="(min-width: 800px)"
+								srcset="./img/us.jpg"
+							/>
+							<img
+								src="./img/us.jpg"
+								alt="team foto"
+								loading="lazy"
+							/>
+						</picture>
 					</div>
 				</figure>
 			</section>
