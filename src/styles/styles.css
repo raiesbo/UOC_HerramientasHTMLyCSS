@@ -6,7 +6,9 @@
 	--text-color-main: black;
 	--text-color-second: rgba(0, 0, 0, 0.75);
 	--dropped-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-	--transition: all 250ms ease;
+	--transition-height: height 250ms ease;
+	--transition-transform: transform 250ms ease;
+	--transition-opacity: opacity 250ms ease;
 	--font-main: Georgia, serif;
 	--font-nav: "Lato", sans-serif;
 }
@@ -34,7 +36,7 @@ body {
 	align-items: center;
 	gap: 3rem;
 	border-bottom: 1px solid black;
-	transition: var(--transition);
+	transition: var(--transition-height);
 	height: 0;
 	overflow: hidden;
 }
@@ -98,7 +100,6 @@ h1 a {
 	gap: 0.6rem;
 	padding: 2rem;
 	cursor: pointer;
-	transition: var(--transition);
 }
 
 .line {
@@ -106,7 +107,7 @@ h1 a {
 	height: 0.4rem;
 	width: 3.5rem;
 	border-radius: 0.2rem;
-	transition: var(--transition);
+	transition: var(--transition-transform);
 }
 
 .toggle .lineOne {
@@ -124,9 +125,7 @@ h1 a {
 .mainContent {
 	background-color: var(--bg-color-main);
 	min-height: calc(100vh - 12.5rem);
-	/* border-bottom: 1px solid black; */
 	box-shadow: var(--dropped-shadow);
-	/* transition: var(--transition); */
 	padding-top: 1rem;
 	padding-bottom: 5rem;
 }
@@ -247,7 +246,7 @@ figcaption {
 	top: 1rem;
 	left: 1rem;
 	position: absolute;
-	transition: var(--transition);
+	transition: var(--transition-opacity);
 	opacity: 0;
 }
 
