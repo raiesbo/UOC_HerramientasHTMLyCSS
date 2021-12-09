@@ -7,7 +7,6 @@
 	--text-color-second: rgba(0, 0, 0, 0.75);
 	--dropped-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 	--transition-height: height 250ms ease;
-	--transition-transform: transform 250ms ease;
 	--transition-opacity: opacity 250ms ease;
 	--font-main: Georgia, serif;
 	--font-nav: "Lato", sans-serif;
@@ -69,6 +68,17 @@ body {
 	color: var(--text-color-second);
 }
 
+.logoWrapper {
+	position: absolute;
+	right: 0;
+	display: flex;
+	transform: translateY(5px);
+}
+
+.logo {
+	width: 45px;
+}
+
 h1 {
 	position: absolute;
 }
@@ -82,6 +92,7 @@ h1 a {
 }
 
 .burgerWrapper {
+	position: relative;
 	width: 100%;
 	max-width: 1100px;
 	padding: 0 15px;
@@ -107,7 +118,9 @@ h1 a {
 	height: 0.4rem;
 	width: 3.5rem;
 	border-radius: 0.2rem;
-	transition: var(--transition-transform);
+	transition-property: transform, opacity;
+	transition-duration: 250ms;
+	transition-timing-function: ease;
 }
 
 .toggle .lineOne {
@@ -255,7 +268,7 @@ figcaption {
 }
 
 .mainFooter {
-	height: 6rem;
+	/* height: 18rem; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -263,17 +276,24 @@ figcaption {
 	background-color: var(--bg-color-second);
 }
 
+.mainFooter .logoWrapper {
+	position: initial;
+	width: 100%;
+	display: block;
+	margin: auto auto 1.5rem;
+}
+
 .footerContainer {
+	position: relative;
 	margin: auto;
 	max-width: 1100px;
-	padding: 1.5rem;
+	padding: 3rem 1.5rem;
 	width: 100%;
 	text-align: center;
 }
 
 .footerContainer p {
 	font-family: var(--font-nav);
-	min-height: 100%;
 	font-size: 1.5rem;
 	color: var(--text-color-second);
 }
@@ -281,4 +301,30 @@ figcaption {
 .footerContainer p strong {
 	font-family: var(--font-nav);
 	color: var(--text-color-main);
+}
+
+.linksLink {
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.footerLinksHeader {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: var(--font-nav);
+	margin-bottom: 1rem;
+}
+
+.footerLink {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.footerLink a {
+	text-decoration: none;
+	color: var(--text-color-second);
+}
+
+.footerLink a:hover {
+	text-decoration: underline;
 }
