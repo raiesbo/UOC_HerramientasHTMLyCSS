@@ -58,17 +58,17 @@
 				<figure class="imgWrapper">
 					<div class="auxDiv">
 						<picture>
-							<!-- new real pictures are missing here -->
 							<source
 								media="(max-width: 799px)"
-								srcset="./img/us.jpg"
-							/>
-							<source
-								media="(min-width: 800px)"
-								srcset="./img/us.jpg"
+								srcset="
+									./img/us_370.avif   370w,
+									./img/us_780.avif   780w,
+									./img/us_1000.avif 1000w
+								"
+								sizes="(max-width: 370px) 370px, (max-width: 780px) 780px, 1000px"
 							/>
 							<img
-								src="./img/us.jpg"
+								src="./img/us_1000.jpg"
 								alt="team foto"
 								loading="lazy"
 							/>
