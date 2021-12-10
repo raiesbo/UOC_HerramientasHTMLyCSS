@@ -16,7 +16,7 @@
 		"main third";
 	margin: 0;
 	grid-template-columns: 65% 35%;
-	grid-row: 50% 50%;
+	grid-template-rows: 1fr 1fr;
 	max-height: 60rem;
 	gap: 1rem;
 }
@@ -117,8 +117,8 @@
 	.tripInfoImageWrapper {
 		display: grid;
 		grid-template-areas: "second";
-		grid-template-columns: 100%;
-		grid-row: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
 		height: 50rem;
 		gap: 1rem;
 	}

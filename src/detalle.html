@@ -59,10 +59,6 @@
 					<figure class="tripInfoImageWrapper">
 						<div class="imgMain">
 							<picture>
-								<source
-									type="image/avif"
-									src="./img/berlin_center_1000.avif"
-								/>
 								<img
 									src="./img/berlin_center_1000.jpg"
 									alt="Centro de Berlín, edifício gubernamental."
@@ -75,9 +71,10 @@
 								<source
 									type="image/avif"
 									srcset="
-										./img/mitte_island_vertical.avif 640w,
-										./img/mitte_island.avif
+										./img/mitte_island_vertical.avif  640w,
+										./img/mitte_island.avif          1000w
 									"
+									sizes="(max-width: 370px) 370px, 1000px"
 								/>
 								<img
 									src="./img/mitte_island.jpg"
@@ -88,10 +85,6 @@
 						</div>
 						<div class="imgThird">
 							<picture>
-								<source
-									type="image/avif"
-									src="./img/mitte_bridge.avif"
-								/>
 								<img
 									src="./img/mitte_bridge.jpg"
 									alt="Centro de Berlín, puente."

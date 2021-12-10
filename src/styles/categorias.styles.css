@@ -49,13 +49,10 @@
 	background-color: var(--bg-color-main);
 	font-family: var(--font-nav);
 	color: var(--text-color-second);
-	/* border-radius: 2rem; */
-	/* box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2); */
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-weight: 800;
 	transition: all 200ms ease;
-	/* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .tripContainer a:hover {
