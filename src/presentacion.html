@@ -59,13 +59,16 @@
 					<div class="auxDiv">
 						<picture>
 							<source
-								media="(max-width: 799px)"
-								srcset="
-									./img/us_370.avif   370w,
-									./img/us_780.avif   780w,
-									./img/us_1000.avif 1000w
-								"
-								sizes="(max-width: 370px) 370px, (max-width: 780px) 780px, 1000px"
+								srcset="./img/us_370.avif"
+								media="(max-width: 370px)"
+							/>
+							<source
+								srcset="./img/us_780.avif"
+								media="(max-width: 780px)"
+							/>
+							<source
+								srcset="./img/us_1000.avif"
+								media="(min-width: 780px)"
 							/>
 							<img
 								src="./img/us_1000.jpg"
