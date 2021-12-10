@@ -132,10 +132,6 @@
 		display: none;
 	}
 
-	/* .imgMain img {
-		min-height: 100%;
-	} */
-
 	.imgSecond {
 		grid-area: second;
 		min-height: 100%;
