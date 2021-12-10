@@ -80,6 +80,12 @@ body {
 	margin-right: 10px;
 }
 
+.logo:hover {
+	animation-duration: 2s;
+	animation-name: twist;
+	animation-iteration-count: infinite;
+}
+
 h1 {
 	position: absolute;
 }
@@ -346,5 +352,17 @@ figcaption {
 	}
 	100% {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+@keyframes twist {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: translateX(359deg);
 	}
 }
