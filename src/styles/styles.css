@@ -81,9 +81,10 @@ body {
 }
 
 .logo:hover {
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-name: twist;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 h1 {
@@ -268,13 +269,14 @@ figcaption {
 	position: absolute;
 	transition: var(--transition-opacity);
 	opacity: 0;
+	z-index: 2;
 }
 
 .visitSpot:hover .visitSpotTitle {
 	opacity: 1;
 }
 
-.auxDiv {
+.examples .auxDiv {
 	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
