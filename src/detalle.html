@@ -57,11 +57,48 @@
 				</p>
 				<article class="tripInfo">
 					<figure class="tripInfoImageWrapper">
-						<img
-							src="./img/berlin_center_1000.jpg"
-							alt="Centro de Berlín, edifício gubernamental."
-							loading="lazy"
-						/>
+						<div class="imgMain">
+							<picture>
+								<source
+									type="image/avif"
+									src="./img/berlin_center_1000.avif"
+								/>
+								<img
+									src="./img/berlin_center_1000.jpg"
+									alt="Centro de Berlín, edifício gubernamental."
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<div class="imgSecond">
+							<picture>
+								<source
+									type="image/avif"
+									srcset="
+										./img/mitte_island_vertical.avif 640w,
+										./img/mitte_island.avif
+									"
+								/>
+								<img
+									src="./img/mitte_island.jpg"
+									alt="Centro de Berlín, edifício gubernamental."
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<div class="imgThird">
+							<picture>
+								<source
+									type="image/avif"
+									src="./img/mitte_bridge.avif"
+								/>
+								<img
+									src="./img/mitte_bridge.jpg"
+									alt="Centro de Berlín, edifício gubernamental."
+									loading="lazy"
+								/>
+							</picture>
+						</div>
 					</figure>
 					<div class="tripInforContent">
 						<h3 class="tripInfoTitle">Berlín Mitte</h3>
