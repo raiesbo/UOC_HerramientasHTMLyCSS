@@ -1,7 +1,7 @@
 {
-  "name": "herramientas_html-y-css_pec2",
+  "name": "herramientas_html-y-css",
   "version": "2.0.0",
-  "description": "PEC2 de la asignatura Herramientas HTML y CSS I",
+  "description": "PEC3 de la asignatura Herramientas HTML y CSS I",
   "author": "Raimon Espasa Bou",
   "source": "src/index.html",
   "scripts": {
@@ -23,13 +23,13 @@
     "herramientas",
     "html",
     "css",
-    "pec1"
+    "pec3"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raiesbo/herramientasHTMLyCSS_PEC1/issues"
+    "url": "https://github.com/raiesbo/UOC_HerramientasHTMLyCSS/issues"
   },
-  "homepage": "https://github.com/raiesbo/herramientasHTMLyCSS_PEC1#readme",
+  "homepage": "https://github.com/raiesbo/UOC_HerramientasHTMLyCSS#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cypress": "^8.7.0",
