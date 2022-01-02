@@ -276,16 +276,16 @@ figcaption {
 	opacity: 1;
 }
 
-.examples .auxDiv {
+/* .examples .auxDiv {
 	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
+} */
 
-.visitSpot:hover .auxDiv {
+/* .visitSpot:hover .auxDiv {
 	animation-duration: 500ms;
 	animation-timing-function: ease;
 	animation-name: foldImg;
 	animation-fill-mode: both;
-}
+} */
 
 .mainFooter {
 	display: flex;
@@ -348,14 +348,14 @@ figcaption {
 	text-decoration: underline;
 }
 
-@keyframes foldImg {
+/* @keyframes foldImg {
 	0% {
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 	}
 	100% {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	}
-}
+} */
 
 @keyframes twist {
 	0% {
