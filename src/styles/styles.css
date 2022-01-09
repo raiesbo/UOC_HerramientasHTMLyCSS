@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
-
 :root {
 	--bg-color-main: rgb(240, 240, 240);
 	--bg-color-second: white;
@@ -10,6 +8,11 @@
 	--transition-opacity: opacity 250ms ease;
 	--font-main: Georgia, serif;
 	--font-nav: "Lato", sans-serif;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato-Regular.ttf);
 }
 
 * {
@@ -362,11 +365,11 @@ picture img {
 	}
 } */
 
-/* @keyframes twist {
+@keyframes twist {
 	0% {
 		transform: rotate(0);
 	}
 	100% {
 		transform: rotate(360deg);
 	}
-} */
+}
